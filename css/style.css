@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../clear-snake-game-character-z6jd7jtsl04g6mxx.jpg"); 
+    min-height: 100vh;
+    background-size:125vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#board{
+    background: linear-gradient(rgb(110, 109, 109), rgba(244, 239, 242, 0.627));
+    width: 90vmin;
+    height: 92vmin;
+    border-radius: 5%;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(244, 12, 12); 
+    transform: scale(1.02);
+    border-radius: 50px;
+}
+
+.snake{
+    background-color: rgb(76, 128, 234);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background-color: aliceblue;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
